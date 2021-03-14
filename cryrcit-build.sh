@@ -1,9 +1,15 @@
 #!/bin/bash
 
+if [[ $1 = "" ]]
+then
+      echo "Is required a parameter (for acquire variable PHP_VERSION)"
+      exit
+else
+      PHP_VERSION=$1
+fi
+
 #### halt script on error
 set -xe
 
 #### Build the Docker Images
-if [ -n "${PHP_VERSION}" ]; then
     docker build -f ./Dockerfile-${PHP_VERSION} .
-fi
