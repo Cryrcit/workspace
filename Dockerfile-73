@@ -77,4 +77,5 @@ RUN curl -s http://getcomposer.org/installer | php && \
     mv composer.phar /usr/local/bin/composer
 
 # Source the bash
-RUN . ~/.bashrc
+#RUN . ~/.bashrc
+RUN /bin/bash ~/.bashrc
