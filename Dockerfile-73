@@ -4,8 +4,7 @@
 #--------------------------------------------------------------------------
 #
 
-#FROM cryrcit/baseimage:latest
-FROM phusion/baseimage:18.04-1.0.0
+FROM cryrcit/baseimage:latest
 
 LABEL maintainer="Cryrcit <project@cryrc.it>"
 
